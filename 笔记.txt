@@ -1,0 +1,69 @@
+1.  <header></header>
+   <article>
+<hgroup></hgroup>
+</article>
+   <aside></aside>
+   <footer></footer>
+2.<label for="address">请输入邮箱地址:</label>
+  <input type="text" id="address" value="这是一个文本输入框">
+3.清除浮动
+.clear:after {
+    content: "";
+    display: block;
+    clear: both；
+}
+4. 三栏式
+左边：float:left;
+右边：float:right;
+中间：用margin 控制距离；
+父选择器：清除浮动
+5.<img src="http://placehold.it/80x80" alt="团队logo" title="团队logo">
+6.页面水平垂直居中
+方法一：
+.sub {
+    width: 400px;
+    height: 200px;
+    background: #ccc;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -100px;
+}
+方法二：
+.container {
+    width: 400px;
+    height: 200px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+7.导航栏 一般都是左 float 右 float 父清除浮动
+<header class="clear-flaot">
+   <div class="head">
+	<div class="left"></div>
+	<div class="right"></div>
+   </div>
+</header>
+
+8.图片+文字
+<div class="logo">新世界</div>
+.logo{
+	background: url("images/logo.png") no-repeat 0% 40%;
+	margin-left: 20px;
+	line-height: 54px;
+	font-family: 黑体;
+	font-size: 21px;
+}
+<img src="" alt="">
+<span></span>
+9.图片水平居中
+dispaly:block;
+margin:0 auto;
+10 左右分
+左边：dispaly:inline-block
+右边：float：right；
+	padding-left: 10px; //图和字的距离
+}

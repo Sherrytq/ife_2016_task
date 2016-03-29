@@ -1,0 +1,282 @@
+*{
+	font-family:Georgia;
+}
+
+/*a:link {color: #0000FF} /* 未访问的链接 */
+/*a:visited {color: #00FF00} /* 已访问的链接 */
+/*a:hover {color: #FF00FF} /* 鼠标移动到链接上 */
+/*a:active {color: #FF0000} /* 选定的链接 */
+
+.header, .footer{
+	width: 100%;
+	height: 54px;
+	background-color: #333;
+	color: #fff;
+}
+
+.nav{
+	float: right;
+}
+.nav li{
+	float: left;
+}
+li{
+	margin-right: 14px;
+	padding-right: 10px;
+	margin-top: 6px;
+}
+li a{
+	color: #fff;
+	text-decoration: none;
+}
+.footer{
+	//position: fixed;
+	bottom: 0;
+	text-align: center;
+	padding-top: 22px;
+	line-height: 52px;
+}
+.log{
+	width: 10%;
+	height: 100%;
+	margin-left: 36px;
+}
+
+.container{
+	background-color: #ccc;
+	padding: 10px;
+}
+.container:after{
+	content: "";
+	display: block;
+	clear: both;
+	overflow: hidden;
+	height: 0;
+}
+
+.left, .right{
+	margin-top:20px;
+	
+}
+.left{
+	margin-right: 440px;
+}
+
+.left .item,.right{
+	background-color: #fff;
+	box-shadow: 2px 2px #888;
+	border-radius: 4px;
+}
+
+.item{
+	margin:0 10px 10px 10px;
+}
+
+.right{
+	width:400px;
+	float: right;
+	
+}
+
+ .context{
+  padding:20px 5px 20px 5px;
+}
+
+h1{
+	font-weight: bolder;
+	font-size: 30px;
+}
+h2,h3{
+	color: #AFA1A1;
+	font-weight: normal;
+	font-size: 15px;
+    padding-left: 4px;
+}
+p{
+	padding: 5px 2px;
+	line-height: 30px;
+	font-size: 17px;
+	//font-family:Arial,Verdana,Sans-serif;
+}
+
+
+
+img{
+	width:300px;
+	height:200px;
+}
+.itemimg{
+	overflow:hidden;
+	margin:10px;
+}
+.imgs{
+	width:232px;
+	height:156px;
+	border:1px solid #000;
+	float:left;
+	text-align: center;
+	margin: 10px 10px;
+}
+
+.imgs img{
+	width:80%;
+	height:75%;
+	margin: 5px 4px 10px 4px ;
+}
+
+table{	
+	width:100%;
+	font-size: 16px;	
+	border-collapse:collapse;
+	text-align:left;
+	line-height: 30px;
+
+}
+
+table th{
+	background-color: #333;
+	color:#fff;
+	font-weight: bolder;
+	font-size: 18px;	
+}
+
+table, td, th{
+	border:2px solid #ccc;
+}
+
+table tr:last-child{
+	background-color: #ccc;
+	font-weight: bolder;
+	font-size: 18px;
+
+}
+
+.line{
+	width:4px;
+	height:38px;
+	float:left;
+	background-color: #ccc;
+	margin: 0px 8px 2px 14px;
+}
+
+form{
+	margin:10px 10px 10px 26px;
+}
+
+input {
+	border:1px solid #ccc;
+	box-shadow: 1px 1px #ccc;
+	border-radius: 1px;
+	line-height: 20px;
+}
+
+.forms{
+	margin:10px;
+	overflow:hidden;
+}
+
+.title{
+	text-align: right;
+	float:left;
+	margin-right: 10px;
+	width:120px;
+	font-size: 14px;
+}
+
+.formcontent{
+	text-align: left;
+	float:left;
+}
+
+.note{
+	color:#ccc;
+	font-size: 12px;
+	margin:10px 0;
+}
+
+textarea{
+	height:120px;
+}
+/*.cir{
+	background-color: #05abe0;
+	width:10px;
+	height:10px;
+	border-radius: 100%;
+}*/
+
+button{
+	width:90%;
+	height:48px;
+	text-align: center;
+	border-radius: 10px;
+	line-height: 10px;
+	background-color: #1198C3;
+	margin-left: 14px;
+	font-size: 20px;
+	color:#fff;
+	font-weight: bolder;
+}
+
+select {
+  /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+ // border: solid 1px #000;
+  border-radius: 2px;
+  width: 80px;
+  height: 20px;
+  line-height: 20px
+  /*很关键：将默认的select选择框样式清除*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  /*在选择框的最右侧中间显示小箭头图片*/
+  background: url("select.jpg") no-repeat scroll right center transparent;
+  background-size: contain;
+
+
+  /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+  padding-right: 14px;
+}
+
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { display: none; }
+
+.radiopic{
+width: 15px;
+height: 30px;
+float: left;
+padding-top: 3px;
+cursor: pointer;
+text-align: center;
+//background-image: url("radio.jpg");
+background-repeat: no-repeat;
+background-position: center;
+margin: -7px 0px -6px 4px;
+line-height: 18px;
+padding-right: 10px;
+background-size: contain;
+
+}
+
+.radiofemale{
+	background-image: url("radio2.jpg");
+}
+
+.radiomale{
+	background-image: url("radio.jpg");
+}
+
+input[type="radio"]{
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  float: right;
+  margin-left: 24px;
+}
+
+.radiosex{
+	width: 50px;
+	height: 30px;
+	float: left;
+}
